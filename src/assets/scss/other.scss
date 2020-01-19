@@ -1,0 +1,43 @@
+.highlight-button {
+  color: #fffd;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid $highlight-color;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: rgba(250, 161, 79, 0.2);
+  }
+
+  &:active {
+    background-color: rgba(250, 161, 79, 0.4);
+  }
+}
+
+// circle loader
+.lds-dual-ring {
+  display: block;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
